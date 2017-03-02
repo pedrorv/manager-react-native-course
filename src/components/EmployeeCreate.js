@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Picker, Text } from 'react-native'
 
 import { employeeUpdate, employeeCreate } from '../actions'
 import { Card, CardSection, Input, Button } from './common'
@@ -16,8 +15,6 @@ class EmployeeCreate extends Component {
   }
 
   render() {
-    const { name, phone, employeeUpdate } = this.props
-
     return (
       <Card>
         <EmployeeForm {...this.props} />
